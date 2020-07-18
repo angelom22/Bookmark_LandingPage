@@ -16,6 +16,9 @@ body
   color var(--veryDarkBlue)
   margin: 0
 
+.is-hidden
+  display none !important
+
 .u-wrapper
   max-width 1200px
   margin auto
@@ -23,7 +26,23 @@ body
 
 .u-h1
   font-size 2em
-
+  font-weight 400
 .u-p
   color var(--grayishBlue)
   line-height 1.8
+.u-button
+  background var(--softBlue)
+  color white
+  padding 1em 1em
+  font-size .9em
+  font-weight 500
+  border-radius .5em
+  margin-left .5em
+  border none
+  cursor pointer
+  box-shadow 0px 5px 10px -5px var(--softBlue)
+  &:firt-child-of-type
+    margin none
+  &.is-gray
+    color var(--veryDarkBlue)
+    background #f7f7f7f7

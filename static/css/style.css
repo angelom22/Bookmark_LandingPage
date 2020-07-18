@@ -82,9 +82,13 @@
 }
 .hero {
   text-align: center;
+  padding: 4em 0;
 }
 .hero-image {
   max-width: 100%;
+}
+.hero.buttons {
+  padding-top: 1em;
 }
 :root {
   --softBlue: #5368df;
@@ -98,6 +102,9 @@ body {
   color: var(--veryDarkBlue);
   margin: 0;
 }
+.is-hidden {
+  display: none !important;
+}
 .u-wrapper {
   max-width: 1200px;
   margin: auto;
@@ -105,8 +112,28 @@ body {
 }
 .u-h1 {
   font-size: 2em;
+  font-weight: 400;
 }
 .u-p {
   color: var(--grayishBlue);
   line-height: 1.8;
+}
+.u-button {
+  background: var(--softBlue);
+  color: #fff;
+  padding: 1em 1em;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 0.5em;
+  margin-left: 0.5em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px -5px var(--softBlue);
+}
+.u-button:firt-child-of-type {
+  margin: none;
+}
+.u-button.is-gray {
+  color: var(--veryDarkBlue);
+  background: rgba(247,247,247,0.969);
 }
