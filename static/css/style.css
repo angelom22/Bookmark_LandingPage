@@ -90,6 +90,92 @@
 .hero.buttons {
   padding-top: 1em;
 }
+.tabs {
+  margin-top: 2em;
+  border-top: 1px solid var(--grayishBlue);
+}
+.tabs-link {
+  border-bottom: 1px solid var(--grayishBlue);
+}
+.tabs-content {
+  display: none;
+}
+.tabs-content img {
+  max-width: 100%;
+  margin-bottom: 1.5em;
+}
+.tabs-grid {
+  margin-top: 4em;
+}
+.tabs label {
+  padding: 1em 0;
+  display: block;
+  position: relative;
+}
+.tabs label:after {
+  display: none;
+  content: "";
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  left: 0;
+  transform: translateX(50%);
+  box-shadow: inset 0 -15px 0px -10px var(--softRed);
+}
+.tabs input {
+  display: none;
+}
+.tabs input[id="bookmarking"]:checked ~ ul [for="bookmarking"]:after {
+  display: block;
+}
+.tabs input[id="bookmarking"]:checked ~ .tabs-grid #tabs-bookmarking {
+  display: block;
+}
+.tabs input[id="searching"]:checked ~ ul [for="searching"]:after {
+  display: block;
+}
+.tabs input[id="searching"]:checked ~ .tabs-grid #tabs-searching {
+  display: block;
+}
+.tabs input[id="sharing"]:checked ~ ul [for="sharing"]:after {
+  display: block;
+}
+.tabs input[id="sharing"]:checked ~ .tabs-grid #tabs-sharing {
+  display: block;
+}
+.features {
+  text-align: center;
+  padding: 3em 0;
+}
+.download {
+  text-align: center;
+  padding: 3em 0;
+}
+.download .u-wrapper > .u-p {
+  margin-bottom: 3em;
+}
+.download-grid {
+  margin-top: 3em;
+  display: grid;
+  grid-row-gap: 2em;
+  margin: 0 1em;
+}
+.download-item {
+  box-shadow: 0 10px 11px -5px rgba(83,104,223,0.3);
+  border-radius: 1em;
+  padding: 1.5em;
+  padding-top: 2.5em;
+  background: url("../images/bg-dots.svg") repeat-x center buttom 100px;
+}
+.download-item .u-p {
+  margin-bottom: 4em;
+  margin-top: 0.5em;
+}
+.download-item .u-h3 {
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
 :root {
   --softBlue: #5368df;
   --softRed: #fa5757;
@@ -102,6 +188,11 @@ body {
   color: var(--veryDarkBlue);
   margin: 0;
 }
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
 .is-hidden {
   display: none !important;
 }
@@ -110,13 +201,18 @@ body {
   margin: auto;
   padding: 1em;
 }
-.u-h1 {
+.u-h1,
+.u-h2 {
   font-size: 2em;
-  font-weight: 400;
+  font-weight: 500;
+}
+.u-h2 {
+  font-size: 1.5em;
 }
 .u-p {
   color: var(--grayishBlue);
   line-height: 1.8;
+  font-size: 0.9em;
 }
 .u-button {
   background: var(--softBlue);
@@ -136,4 +232,7 @@ body {
 .u-button.is-gray {
   color: var(--veryDarkBlue);
   background: rgba(247,247,247,0.969);
+}
+.u-button.is-fullWidth {
+  width: 100%;
 }
