@@ -1,4 +1,6 @@
 node_modules/
 bookmark-landing-page-master/
+challenge/
 
+package-lock.json
 .DS_Store
