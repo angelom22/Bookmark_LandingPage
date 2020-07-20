@@ -49,15 +49,20 @@
 
   <section class="hero">
     <div class="u-wrapper">
-      <img class="hero-image" src="./static/images/illustration-hero.svg" alt="imagen hero">
-      <h1 class="u-h1">A Simple Bookmark Manager</h1>
-      <p class="u-p">A clean and simple interface to organize your favourite websites. Open a new
-        browser tab and see your sites load instantly. Try it for free.</p>
-      <div class="hero-buttons">
-        <button class="u-button">Get it on Chrome</button>
-        <button class="u-button is-gray">Get it on Firefox</button>
+      <div class="hero-grid">
+        <div class="hero-imageContainer">
+          <img class="hero-image" src="./static/images/illustration-hero.svg" alt="imagen hero">
+        </div>
+        <div class="hero-content">
+          <h1 class="u-h1">A Simple Bookmark Manager</h1>
+          <p class="u-p">A clean and simple interface to organize your favourite websites. Open a new
+            browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="hero-buttons">
+            <button class="u-button">Get it on Chrome</button>
+            <button class="u-button is-gray">Get it on Firefox</button>
+          </div>
+        </div>
       </div>
-
     </div>
   </section>
 
@@ -90,24 +95,33 @@
         <div class="tabs-grid">
           <div class="tabs-content" id="tabs-bookmarking">
             <img src="./static/images/illustration-features-tab-1.svg" alt="imagen tabs #1">
-            <h2 class="u-h2">Bookmark in one click</h2>
-            <p class="u-p">Organize your bookmarks however you like. Our simple drag-and-drop interface
-              gives you complete control over how you manage your favourite sites.</p>
-            <button class="u-button">More Info</button>
+            <div>
+              <h2 class="u-h2">Bookmark in one click</h2>
+              <p class="u-p">Organize your bookmarks however you like. Our simple drag-and-drop interface
+                gives you complete control over how you manage your favourite sites.</p>
+              <button class="u-button">More Info</button>
+            </div>
+
           </div>
+
           <div class="tabs-content" id="tabs-searching">
             <img src="./static/images/illustration-features-tab-2.svg" alt=" imagen tabs #2">
-            <h2 class="u-h2">Intelligent search</h2>
-            <p class="u-p">Our powerful search feature will help you find saved sites in no time at all.
-              No need to trawl through all of your bookmarks.</p>
-            <button class="u-button">More Info</button>
+            <div>
+              <h2 class="u-h2">Intelligent search</h2>
+              <p class="u-p">Our powerful search feature will help you find saved sites in no time at all.
+                No need to trawl through all of your bookmarks.</p>
+              <button class="u-button">More Info</button>
+            </div>
           </div>
+
           <div class="tabs-content" id="tabs-sharing">
             <img src="./static/images/illustration-features-tab-3.svg" alt="imagen tabs #3">
-            <h2 class="u-h2">Share your bookmarks</h2>
-            <p class="u-p">Easily share your bookmarks and collections with others. Create a shareable
-              link that you can send at the click of a button.</p>
-            <button class="u-button">More Info</button>
+            <div>
+              <h2 class="u-h2">Share your bookmarks</h2>
+              <p class="u-p">Easily share your bookmarks and collections with others. Create a shareable
+                link that you can send at the click of a button.</p>
+              <button class="u-button">More Info</button>
+            </div>
           </div>
         </div>
       </div>
@@ -161,6 +175,7 @@
             Add & Install Extension
           </button>
         </div>
+
       </div>
     </div>
   </section>
@@ -273,6 +288,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>
